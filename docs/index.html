@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="zh-CN" data-screenshot-mode="live">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="NAMI 让你在 VS Code 中用自然语言和斜杠命令看市场、问异动、查资料、选股票和盯盘，并接入专业金融数据与研究能力。"
+    />
+    <meta name="theme-color" content="#070b0d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NAMI — Native Agent Market Interface" />
+    <meta property="og:description" content="自然语言随口问，斜杠命令直达结果，提供专业的金融数据与研究。" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="NAMI — Native Agent Market Interface" />
+    <meta name="twitter:description" content="自然语言随口问，斜杠命令直达结果，提供专业的金融数据与研究。" />
+    <title>NAMI — Native Agent Market Interface</title>
+    <link rel="icon" href="assets/nami-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="NAMI 首页">
+        <img src="assets/nami-icon.svg" width="34" height="34" alt="" />
+        <span class="brand-copy">
+          <strong>NAMI</strong>
+          <small>NATIVE AGENT MARKET INTERFACE</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#use-cases">HOW TO USE</a>
+        <a href="#commands">COMMANDS</a>
+        <a href="#intelligence">DATA</a>
+        <a href="#interface">PRODUCT</a>
+      </nav>
+      <a
+        class="header-cta"
+        href="https://github.com/kramist/NAMI-releases/releases/latest/download/nami.vsix"
+        target="_blank"
+        rel="noreferrer"
+      >
+        下载 VSIX
+        <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" data-pointer-field>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span>01</span> MARKET, WITHOUT THE CONTEXT SWITCH</p>
+          <h1>你继续工作，<br /><em>NAMI 帮你留意市场。</em></h1>
+          <p class="hero-summary">
+            不用反复切到行情软件。随口问，也可以用斜杠命令直达行情、研究、选股和盯盘；<br />
+            深度结合专业金融数据与研究能力。
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://github.com/kramist/NAMI-releases/releases/latest/download/nami.vsix"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>下载 NAMI VSIX</span>
+              <span class="button-key">VS CODE</span>
+            </a>
+            <a class="button button-ghost" href="#use-cases">看看怎么用</a>
+          </div>
+          <ul class="hero-meta" aria-label="NAMI 能力概览">
+            <li>NATURAL LANGUAGE</li>
+            <li>9 MARKET COMMANDS</li>
+          </ul>
+        </div>
+
+        <div class="hero-instrument" aria-label="NAMI 自然语言盯盘示意">
+          <div class="instrument-head">
+            <span>NAMI / ATTENTION CHANNEL</span>
+            <span class="live-state"><i aria-hidden="true"></i> LISTENING</span>
+          </div>
+          <div class="instrument-stage">
+            <div class="stage-label stage-label-left">NOISE</div>
+            <div class="stage-label stage-label-right">SIGNAL</div>
+            <svg class="signal-plot" viewBox="0 0 900 420" role="img" aria-labelledby="plot-title plot-desc">
+              <title id="plot-title">市场信号穿过 NAMI 观测窗口</title>
+              <desc id="plot-desc">连续波形穿过观测窗口，并被琥珀色游标准确捕捉。</desc>
+              <defs>
+                <filter id="cyan-bloom" x="-20%" y="-50%" width="140%" height="200%">
+                  <feGaussianBlur stdDeviation="12" result="blur" />
+                </filter>
+                <linearGradient id="signal-color" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#294d5e" />
+                  <stop offset="0.48" stop-color="#d7dcdf" />
+                  <stop offset="1" stop-color="#4bb4e6" />
+                </linearGradient>
+              </defs>
+              <rect class="observation-window" x="44" y="165" width="812" height="104" rx="8" />
+              <path
+                class="signal-glow"
+                d="M30 236 C112 100 188 86 274 188 C348 276 350 344 421 336 C514 326 498 70 594 70 C684 70 646 308 730 328 C792 343 818 218 875 226"
+              />
+              <path
+                class="signal-line"
+                d="M30 236 C112 100 188 86 274 188 C348 276 350 344 421 336 C514 326 498 70 594 70 C684 70 646 308 730 328 C792 343 818 218 875 226"
+              />
+              <g class="capture-cursor">
+                <line x1="712" y1="178" x2="712" y2="256" />
+                <circle cx="712" cy="178" r="4" />
+              </g>
+            </svg>
+          </div>
+          <div class="command-readout">
+            <p><span class="prompt">›</span> /alert 帮我盯一下光模块</p>
+            <dl>
+              <div><dt>SCOPE</dt><dd>光模块主题 / 已解析</dd></div>
+              <div><dt>STATE</dt><dd><span class="state-dot"></span> BACKGROUND WATCH</dd></div>
+              <div><dt>WAITING FOR</dt><dd>强度 · 广度 · 新闻 · 重要事件</dd></div>
+            </dl>
+          </div>
+          <div class="instrument-foot">
+            <span>状态栏 → 速览 → 展开 → 解释</span>
+            <span>专注你的事，NAMI 帮你留意市场。</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section identity-section reveal" id="use-cases">
+        <div class="section-heading">
+          <p class="section-kicker"><span>02</span> THREE SIMPLE WAYS TO USE NAMI</p>
+          <h2>打开 NAMI，<br />不需要先学习 <em>NAMI。</em></h2>
+          <p>
+            想知道市场怎么样，就看一眼；对某个变化有疑问，就直接问；不想一直盯着，就交代 NAMI 帮你留意。
+          </p>
+        </div>
+
+        <div class="identity-grid">
+          <article class="identity-card reveal">
+            <span class="card-index">01 / GLANCE</span>
+            <h3>涨了吗？</h3>
+            <strong>想知道市场怎么样，按一下 Alt + M。</strong>
+            <p>指数、板块和自选就在当前窗口里展开。看完即走，不必打开另一套行情软件。</p>
+            <div class="card-terminal">ALT + M / 一目了然</div>
+          </article>
+          <article class="identity-card reveal">
+            <span class="card-index">02 / ASK</span>
+            <h3>问一句</h3>
+            <strong>不用先找到正确代码，也不用组织专业问题。</strong>
+            <p>“电池板块为什么跌了？”“打开奥比中光。”像平常说话一样，直接告诉 NAMI 你想知道什么。</p>
+            <div class="card-terminal">直接说你想知道的</div>
+          </article>
+          <article class="identity-card reveal">
+            <span class="card-index">03 / WATCH</span>
+            <h3>盯一会儿</h3>
+            <strong>继续做自己的事，有变化再回来。</strong>
+            <p>一句“帮我盯一下光模块”，NAMI 会持续留意值得关注的变化，没有变化时保持安静。</p>
+            <div class="card-terminal">/ALERT / BACKGROUND WATCH</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section command-system-section" id="commands">
+        <div class="section-heading command-system-heading reveal">
+          <div>
+            <p class="section-kicker"><span>03</span> COMMAND SYSTEM</p>
+            <h2>一个输入框，<br />无限种市场探索可能。</h2>
+          </div>
+          <div>
+            <p>
+              随口说，NAMI 会理解你的意思；知道自己要做什么时，输入斜杠命令即可直达结果。
+              命令是专业工作流的快捷入口，不是使用 NAMI 的语法门槛。
+            </p>
+            <span class="command-principle">COMMANDS ARE SHORTCUTS, NOT RULES</span>
+          </div>
+        </div>
+
+        <div class="command-deck reveal" aria-label="NAMI 斜杠命令体系">
+          <div class="command-deck-head">
+            <span>COMMAND DECK</span>
+            <span>9 MARKET / 2 UTILITY</span>
+          </div>
+          <div class="command-composer">
+            <span class="prompt-prefix">NAMI&gt;</span>
+            <strong>/</strong>
+            <span class="command-cursor" aria-hidden="true"></span>
+            <small>↑↓ 选择命令 · Enter 进入工作流</small>
+          </div>
+          <div class="command-groups">
+            <article class="command-group">
+              <span class="command-group-index">01 / MARKET</span>
+              <h3>看市场</h3>
+              <div class="command-item"><code>/market</code><span>总结市场与自选</span></div>
+              <div class="command-item"><code>/open</code><span>打开股票、指数或板块</span></div>
+              <div class="command-item"><code>/compare</code><span>对比两条相对走势</span></div>
+            </article>
+            <article class="command-group">
+              <span class="command-group-index">02 / RESEARCH</span>
+              <h3>找原因</h3>
+              <div class="command-item"><code>/why</code><span>解释选中位置的异动</span></div>
+              <div class="command-item"><code>/news</code><span>查新闻、公告与研报</span></div>
+            </article>
+            <article class="command-group">
+              <span class="command-group-index">03 / INTELLIGENCE</span>
+              <h3>做研究</h3>
+              <div class="command-item"><code>/data</code><span>查行情、资金与财务</span></div>
+              <div class="command-item"><code>/screen</code><span>用自然语言智能选股</span></div>
+            </article>
+            <article class="command-group">
+              <span class="command-group-index">04 / ATTENTION</span>
+              <h3>管理关注</h3>
+              <div class="command-item"><code>/watch</code><span>管理账户自选</span></div>
+              <div class="command-item"><code>/alert</code><span>创建自然语言盯盘</span></div>
+            </article>
+          </div>
+          <div class="command-deck-foot">
+            <span><code>/clear</code> 清空当前对话</span>
+            <span><code>/help</code> 查看命令与键盘帮助</span>
+            <strong>TYPE / TO DISCOVER</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section journey-section" id="journey">
+        <div class="journey-intro reveal">
+          <p class="section-kicker"><span>04</span> FROM A GLANCE TO AN ANSWER</p>
+          <h2>想看多少，就展开多少。</h2>
+          <p>
+            平时只占状态栏的一小块；想快速了解就展开速览；遇到真正关心的变化，再进入图表和证据。
+          </p>
+          <div class="journey-rail" aria-hidden="true">
+            <span>AMBIENT</span><i></i><span>PEEK</span><i></i><span>EXPLORE</span><i></i><span>WHY</span>
+          </div>
+        </div>
+
+        <div class="journey-stages">
+          <article class="journey-stage reveal" data-journey-stage>
+            <span class="stage-number">01</span>
+            <div>
+              <p class="stage-name">AMBIENT / 背景态</p>
+              <h3>工作时安静陪伴。</h3>
+              <p>把关心的指数、板块或股票放在状态栏。市场一直在，但不会占据你的工作区。</p>
+            </div>
+            <span class="stage-command">STATUS BAR</span>
+          </article>
+          <article class="journey-stage reveal" data-journey-stage>
+            <span class="stage-number">02</span>
+            <div>
+              <p class="stage-name">PEEK / 速览态</p>
+              <h3>三秒看清市场。</h3>
+              <p>按一下 Alt + M，就能看到指数、关注板块、自选走势和一段市场摘要。</p>
+            </div>
+            <span class="stage-command">ALT + M</span>
+          </article>
+          <article class="journey-stage reveal" data-journey-stage>
+            <span class="stage-number">03</span>
+            <div>
+              <p class="stage-name">EXPLORE / 探索态</p>
+              <h3>想深入时再展开。</h3>
+              <p>从分时到多周期 K 线，从价格走势到常用指标，需要的细节都在同一个页面里。</p>
+            </div>
+            <span class="stage-command">/OPEN</span>
+          </article>
+          <article class="journey-stage reveal" data-journey-stage>
+            <span class="stage-number">04</span>
+            <div>
+              <p class="stage-name">WHY / 异动解析</p>
+              <h3>对着异动直接问为什么。</h3>
+              <p>选中分时或 K 线上的位置，NAMI 会结合市场表现、公告和资讯，帮你找到可能相关的证据。</p>
+            </div>
+            <span class="stage-command">/WHY</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section attention-section" id="attention">
+        <div class="attention-copy reveal">
+          <p class="section-kicker"><span>05</span> NATURAL-LANGUAGE ATTENTION</p>
+          <h2>你去做自己的事，<br />市场有变化再叫你。</h2>
+          <p>
+            不用先找证券代码，也不用自己设计阈值。告诉 NAMI“帮我盯一下光模块”，它会理解你关心的范围，持续留意强弱、量能和重要事件。
+          </p>
+          <ul class="feature-list">
+            <li><span>01</span> 一句话说清你关心什么</li>
+            <li><span>02</span> 没有变化时保持安静</li>
+            <li><span>03</span> 提醒时告诉你为什么</li>
+          </ul>
+        </div>
+
+        <div class="attention-terminal reveal" aria-label="自然语言盯盘流程">
+          <div class="terminal-titlebar">
+            <span>ATTENTION TERMINAL</span>
+            <span>WATCH / 01</span>
+          </div>
+          <div class="terminal-query"><span>›</span> /alert 帮我盯一下光模块</div>
+          <div class="terminal-pipeline">
+            <div><span>01</span><strong>听懂你关注什么</strong><p>光模块主题</p><small>从一句话找到关注范围</small></div>
+            <i aria-hidden="true"></i>
+            <div><span>02</span><strong>持续留意变化</strong><p>强度 / 广度 / 量能</p><small>在后台保持关注</small></div>
+            <i aria-hidden="true"></i>
+            <div><span>03</span><strong>有必要时提醒</strong><p>值得注意的变化</p><small>发生了什么 + 为什么</small></div>
+          </div>
+          <div class="terminal-result">
+            <span class="result-state"><i></i> ACTIVE</span>
+            <p>已开始关注“光模块”。当前没有需要打断你的变化。</p>
+            <span class="result-time">NEXT EVALUATION / BACKGROUND</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intelligence-section" id="intelligence">
+        <div class="intelligence-copy reveal">
+          <p class="section-kicker"><span>06</span> NAMI × 金融数据服务</p>
+          <h2>不止信息。<br />把金融 Intelligence <em>变成工作界面。</em></h2>
+          <p>
+            NAMI 把市场数据与金融能力接入同一个上下文。你提出问题，Agent 负责理解金融对象和检索专业金融数据，NAMI 再把结果组织成可以阅读、筛选、导出和继续操作的界面。
+          </p>
+          <div class="intelligence-proof">
+            <span>行情与图表</span><i aria-hidden="true"></i><span>专业金融数据与研究</span><i aria-hidden="true"></i><span>NAMI 工作区</span>
+          </div>
+        </div>
+
+        <div class="intelligence-terminal reveal" aria-label="NAMI 与专业金融数据服务的能力结合">
+          <div class="terminal-titlebar">
+            <span>DATA SERVICES / CONNECTED</span>
+            <span>FINANCIAL INTELLIGENCE</span>
+          </div>
+          <div class="intelligence-query"><span>NAMI&gt;</span> /screen 光模块板块中，利润增长且估值较低的股票</div>
+          <div class="intelligence-capabilities">
+            <article>
+              <code>/news</code>
+              <div><strong>研究与资讯</strong><span>公告 · 研报 · 新闻 · 政策 · 信源分级</span></div>
+              <small>RESEARCH FEED</small>
+            </article>
+            <article>
+              <code>/data</code>
+              <div><strong>完整金融数据</strong><span>行情 · 资金 · 估值 · 财务 · 多表导出</span></div>
+              <small>DATA TERMINAL</small>
+            </article>
+            <article>
+              <code>/screen</code>
+              <div><strong>自然语言选股</strong><span>条件拆解 · 命中数量 · 完整结果 · 后续操作</span></div>
+              <small>SCREEN TERMINAL</small>
+            </article>
+            <article>
+              <code>/watch</code>
+              <div><strong>账户自选</strong><span>读取 · 添加 · 删除 · 同步你的账户</span></div>
+              <small>ACCOUNT WATCHLIST</small>
+            </article>
+          </div>
+          <div class="intelligence-terminal-foot">
+            <span>/news · /data · /screen 连接专业金融数据服务</span>
+            <strong>智能的金融数据分析与研究</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section interface-section" id="interface">
+        <div class="section-heading interface-heading reveal">
+          <p class="section-kicker"><span>07</span> SEE THE PRODUCT</p>
+          <h2>不止是侧边栏</h2>
+          <p>从状态栏速览、K 线研究到高密度信息台，下面将展示 NAMI 在日常使用中的真实样子。</p>
+        </div>
+
+        <div class="screenshot-grid">
+          <figure class="screenshot-card screenshot-card-wide reveal">
+            <div class="screenshot-bar">
+              <span>01 / AMBIENT + PEEK</span>
+              <span>1920 × 1032 / WEBP</span>
+            </div>
+            <img
+              src="assets/screenshots/ambient-peek-placeholder.svg"
+              data-live-src="assets/screenshots/ambient-peek.webp"
+              alt="NAMI Ambient 状态栏、市场概览与自然语言盯盘界面"
+              loading="lazy"
+            />
+            <figcaption>
+              <div><strong>低存在感，不等于低信息量。</strong><span>从状态栏进入市场概览，查看 AI 摘要与正在运行的自然语言盯盘。</span></div>
+              <code>assets/screenshots/ambient-peek.webp</code>
+            </figcaption>
+          </figure>
+
+          <figure class="screenshot-card reveal">
+            <div class="screenshot-bar">
+              <span>02 / EXPLORE + WHY</span>
+              <span>1920 × 1032 / WEBP</span>
+            </div>
+            <img
+              src="assets/screenshots/explore-why-placeholder.svg"
+              data-live-src="assets/screenshots/explore-why.webp"
+              alt="K 线探索与 Why 异动解析截图占位图"
+              loading="lazy"
+            />
+            <figcaption>
+              <div><strong>选择一个位置，询问这里发生了什么。</strong><span>多周期 K 线、指标副图和选中区间共享 Why 上下文。</span></div>
+              <code>assets/screenshots/explore-why.webp</code>
+            </figcaption>
+          </figure>
+
+          <figure class="screenshot-card reveal">
+            <div class="screenshot-bar">
+              <span>03 / RESEARCH CONSOLE</span>
+              <span>1920 × 1032 / WEBP</span>
+            </div>
+            <img
+              src="assets/screenshots/research-console-placeholder.svg"
+              data-live-src="assets/screenshots/research-console.webp"
+              alt="Research Console 研究工作区截图占位图"
+              loading="lazy"
+            />
+            <figcaption>
+              <div><strong>高密度信息拥有自己的工作区。</strong><span>资讯、公告、研报、数据与筛选结果在 Console 中展开。</span></div>
+              <code>assets/screenshots/research-console.webp</code>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section agent-section" id="agent">
+        <div class="agent-diagram reveal" aria-label="NAMI 回答市场问题的过程">
+          <div class="diagram-head"><span>FROM A QUESTION TO A CLEARER PICTURE</span><span>NO PERFECT INPUT REQUIRED</span></div>
+          <ol>
+            <li><span>01</span><strong>你这样问</strong><small>“电池板块为什么跌了？”</small></li>
+            <li><span>02</span><strong>NAMI 找到对象</strong><small>板块、成分与市场背景</small></li>
+            <li><span>03</span><strong>补齐发生了什么</strong><small>行情、资讯与公告</small></li>
+            <li><span>04</span><strong>整理出证据</strong><small>时间、来源、相对表现</small></li>
+            <li><span>05</span><strong>继续查看</strong><small>打开、对比或追问</small></li>
+          </ol>
+          <div class="diagram-signal" aria-hidden="true"><span></span></div>
+        </div>
+
+        <div class="agent-copy reveal">
+          <p class="section-kicker"><span>08</span> COMMAND WHEN YOU KNOW / ASK WHEN YOU DON'T</p>
+          <h2>知道要去哪，用命令直达。<br />不知道怎么问，直接说。</h2>
+          <p>
+            名字没输准、问题没说完整，也没关系。NAMI 会理解你想看的证券、板块或主题，把相关行情和信息准备好，再把结果带回图表和页面。
+          </p>
+          <blockquote>命令是快捷入口，不是使用门槛。</blockquote>
+        </div>
+      </section>
+
+      <section class="section trust-section" id="trust">
+        <div class="section-heading reveal">
+          <p class="section-kicker"><span>09</span> USE IT WITH CONFIDENCE</p>
+          <h2>市场可以复杂，使用不必。</h2>
+        </div>
+        <div class="trust-grid">
+          <article class="trust-item reveal"><span>01</span><h3>模型由你选择</h3><p>连接你自己的 OpenAI 或兼容模型服务，不被单一服务锁定。</p></article>
+          <article class="trust-item reveal"><span>02</span><h3>密钥安全保存</h3><p>AI 与数据服务密钥保存在 VS Code 的安全存储中，不写进项目、设置文件或日志。</p></article>
+          <article class="trust-item reveal"><span>03</span><h3>不会读取你的代码</h3><p>市场问题只携带相关市场信息，不会把编辑器里的源代码发送给模型。</p></article>
+          <article class="trust-item reveal"><span>04</span><h3>不替你下决定</h3><p>NAMI 帮你整理信息和研究证据，不执行交易，也不承诺预测结果。</p></article>
+        </div>
+      </section>
+
+      <section class="final-cta reveal" id="install">
+        <div class="cta-grid" aria-hidden="true"></div>
+        <img src="assets/nami-icon.svg" width="78" height="78" alt="" />
+        <p class="section-kicker"><span>10</span> MARKET WHEN YOU NEED IT</p>
+        <h2>少切一次屏，<br /><em>多看清一点。</em></h2>
+        <p>在你的工作流中里随时看市场、问问题、交代盯盘。</p>
+        <div class="hero-actions final-actions">
+          <a
+            class="button button-primary"
+            href="https://github.com/kramist/NAMI-releases/releases/latest/download/nami.vsix"
+            target="_blank"
+            rel="noreferrer"
+          >
+            下载 NAMI VSIX <span aria-hidden="true">↗</span>
+          </a>
+          <a class="button button-ghost" href="https://github.com/kramist/NAMI-releases/releases" target="_blank" rel="noreferrer">查看全部版本</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>NAMI</strong><span>NATIVE AGENT MARKET INTERFACE</span></div>
+      <p>AI 生成内容仅用于信息与研究辅助，不构成投资建议。</p>
+      <span>© 2026 NAMI</span>
+    </footer>
+
+    <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">NAMI</title>
+  <rect width="1024" height="1024" rx="88" fill="#070b0d"/>
+  <rect x="24" y="24" width="976" height="976" rx="68" fill="none" stroke="#202a31" stroke-width="8"/>
+  <rect x="72" y="458" width="880" height="176" rx="14" fill="#080d10" stroke="#202a31" stroke-width="8"/>
+  <path d="M72 568 C134 466 198 428 264 488 C340 558 324 704 412 704 C510 704 500 326 614 326 C712 326 654 630 770 692 C848 734 884 568 952 584" fill="none" stroke="#4bb4e6" stroke-width="92" stroke-linecap="butt" stroke-linejoin="round" transform="translate(0 18)"/>
+  <path d="M72 568 C134 466 198 428 264 488 C340 558 324 704 412 704 C510 704 500 326 614 326 C712 326 654 630 770 692 C848 734 884 568 952 584" fill="none" stroke="#d7dcdf" stroke-width="76" stroke-linecap="butt" stroke-linejoin="round"/>
+  <path d="M816 480 V612" fill="none" stroke="#e9b44c" stroke-width="12"/>
+</svg>

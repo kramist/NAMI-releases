@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Ambient 与 Peek 截图占位图</title>
+  <desc id="desc">请使用真实 NAMI 产品截图替换 ambient-peek.webp。</desc>
+  <defs>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="#182126" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="#070b0d"/>
+  <rect width="1600" height="1000" fill="url(#grid)"/>
+  <rect x="100" y="92" width="1400" height="816" rx="12" fill="#0b1013" stroke="#31424b" stroke-width="2"/>
+  <path d="M100 160H1500" stroke="#202a31" stroke-width="2"/>
+  <circle cx="134" cy="126" r="7" fill="#4bb4e6"/><circle cx="160" cy="126" r="7" fill="#202a31"/><circle cx="186" cy="126" r="7" fill="#202a31"/>
+  <path d="M310 610 C420 430 540 700 650 520 S850 350 960 540 S1180 720 1300 430" fill="none" stroke="#20333c" stroke-width="18"/>
+  <path d="M310 610 C420 430 540 700 650 520 S850 350 960 540 S1180 720 1300 430" fill="none" stroke="#4bb4e6" stroke-width="4"/>
+  <line x1="1110" y1="390" x2="1110" y2="670" stroke="#e9b44c" stroke-width="4"/>
+  <text x="132" y="220" fill="#4bb4e6" font-family="monospace" font-size="20" letter-spacing="4">SCREENSHOT SLOT / 01</text>
+  <text x="800" y="790" fill="#d7dcdf" font-family="monospace" font-size="42" text-anchor="middle" letter-spacing="8">AMBIENT + PEEK</text>
+  <text x="800" y="838" fill="#77838a" font-family="monospace" font-size="18" text-anchor="middle" letter-spacing="3">PLACE 1600 × 1000 WEBP HERE</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Research Console 截图占位图</title>
+  <desc id="desc">请使用真实 NAMI 产品截图替换 research-console.webp。</desc>
+  <defs>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="#182126" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="#070b0d"/>
+  <rect width="1600" height="1000" fill="url(#grid)"/>
+  <rect x="100" y="92" width="1400" height="816" rx="12" fill="#0b1013" stroke="#765d28" stroke-width="2"/>
+  <path d="M100 160H1500" stroke="#4f401f" stroke-width="2"/>
+  <circle cx="134" cy="126" r="7" fill="#e9b44c"/><circle cx="160" cy="126" r="7" fill="#202a31"/><circle cx="186" cy="126" r="7" fill="#202a31"/>
+  <path d="M250 340H1350M250 430H1350M250 520H1350M250 610H1350" stroke="#202a31" stroke-width="3"/>
+  <path d="M250 340H590M250 430H780M250 520H1110M250 610H880" stroke="#4bb4e6" stroke-width="5"/>
+  <path d="M250 275H510" stroke="#e9b44c" stroke-width="4"/>
+  <text x="132" y="220" fill="#e9b44c" font-family="monospace" font-size="20" letter-spacing="4">SCREENSHOT SLOT / 03</text>
+  <text x="800" y="790" fill="#d7dcdf" font-family="monospace" font-size="42" text-anchor="middle" letter-spacing="8">RESEARCH CONSOLE</text>
+  <text x="800" y="838" fill="#77838a" font-family="monospace" font-size="18" text-anchor="middle" letter-spacing="3">PLACE 1600 × 1000 WEBP HERE</text>
+</svg>
